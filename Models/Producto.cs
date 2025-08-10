@@ -12,7 +12,7 @@ namespace MiPrimerAppMVC.Models
         public required string Descripcion { get; set; }
         public decimal Precio { get; set; }
 
-        public bool activo { get; set; }
+        public bool Activo { get; set; }
         
         public DateTime FechaDeAlta { get; set; }
     }

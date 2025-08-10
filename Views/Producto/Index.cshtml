@@ -1,3 +1,31 @@
-
-
+@model List<MiPrimerAppMVC.Models.Producto>
 <p> Esta vista es del controlador Producto</p>
+<h>Productos</h>
+<div>
+    <table class ="table">
+        <th>
+            <tr>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Descripción
+                </th>
+                <th>
+                    Precio  
+                </th>
+            </tr>
+        </th>
+        <tbody>  
+        @foreach (var producto in Model)
+            {
+                <tr>
+                    <td>@producto.Nombre</td>
+                    <td>@producto.Descripcion</td>
+                    <td>$@producto.Precio</td>   
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
