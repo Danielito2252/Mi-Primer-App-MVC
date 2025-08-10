@@ -1,4 +1,5 @@
-﻿@{
+﻿@* @model ErrorViewModel *@
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -6,3 +7,30 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+<p>@ViewData["Mensaje2"]</p>
+<p>@ViewBag.Mensaje1</p>
+
+<p> Precio: @(((ViewBag.Precio as decimal?) ?? 0m) * 2)</p>
+<p> Precio2: @(((ViewData["Precio2"] as decimal?) ?? 0m) * 2)</p>
+
+<p> Fecha: @(((ViewBag.Fecha1 as DateTime?) ?? DateTime.MinValue).AddDays(1))</p>
+<p> Fecha2: @(((ViewData["Fecha2"] as DateTime?) ?? DateTime.MinValue).AddDays(1))</p>
+
+
+@* @for(int i=0; i<ViewBag.Contador; i++)
+{
+    <li>intem @i</li>
+    @if (i==9)
+    {
+    <p>correo@(i)c@gmail.com</p>
+    }
+}   
+
+@for(int i=0; i<(int) ViewData["Contador2"]; i++)
+{
+    <li>intem @i</li>
+    @if (i==9)
+    {
+    <p>correo@(i)c@gmail.com</p>
+    }
+}   *@

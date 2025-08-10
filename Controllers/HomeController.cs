@@ -15,6 +15,17 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewData["Mensaje2"] = "Este es un mensaje desde el controlador con ViewData.";
+        ViewBag.Mensaje1 = "Este es un mensaje desde el controlador con ViewBag.";
+
+        ViewBag.Contador = 10;
+        ViewData["Contador2"] = 20;
+
+        ViewBag.Precio = 123.45m;
+        ViewData["Precio2"] = 678.90m;
+
+        ViewBag.Fecha1 = DateTime.Now;
+        ViewData["Fecha2"] = DateTime.Now.AddDays(1);
         return View();
     }
 
@@ -28,4 +39,12 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+    public IActionResult VistaDemo()
+    {
+       // ViewBag.Title = "Vista Demo";
+        
+        return View();
+    }
 }
+

@@ -90,3 +90,4 @@ C:\Users\Daniel\Documents\Visual Studio Code\MiPrimerAppMVC\obj\Debug\net9.0\ref
 C:\Users\Daniel\Documents\Visual Studio Code\MiPrimerAppMVC\obj\Debug\net9.0\MiPrimerAppMVC.pdb
 C:\Users\Daniel\Documents\Visual Studio Code\MiPrimerAppMVC\obj\Debug\net9.0\MiPrimerAppMVC.genruntimeconfig.cache
 C:\Users\Daniel\Documents\Visual Studio Code\MiPrimerAppMVC\obj\Debug\net9.0\ref\MiPrimerAppMVC.dll
+C:\Users\Daniel\Documents\Visual Studio Code\MiPrimerAppMVC\obj\Debug\net9.0\MiPrimerAppMVC.sourcelink.json
